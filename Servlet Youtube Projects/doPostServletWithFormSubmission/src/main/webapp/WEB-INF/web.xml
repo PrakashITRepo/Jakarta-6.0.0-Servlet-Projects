@@ -1,0 +1,17 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+        <servlet-name>myForm</servlet-name>
+        <servlet-class>com.prakashit.UserServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>myForm</servlet-name>
+        <url-pattern>/getUserDetails</url-pattern>
+    </servlet-mapping>
+
+</web-app>

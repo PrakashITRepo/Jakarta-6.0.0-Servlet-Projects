@@ -1,0 +1,17 @@
+CREATE TABLE `servletdb`.`employee_details` (
+  `empId` INT NOT NULL AUTO_INCREMENT,
+  `firstName` VARCHAR(45) NOT NULL,
+  `lastName` VARCHAR(45) NULL,
+  `userName` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NULL,
+  `country` VARCHAR(45) NULL,
+  PRIMARY KEY (`empId`),
+  UNIQUE INDEX `empId_UNIQUE` (`empId` ASC) VISIBLE,
+  UNIQUE INDEX `userName_UNIQUE` (`userName` ASC) VISIBLE);
+
+  Admin table
+  =============
+  CREATE TABLE `servletdb`.`admin` (
+    `empId` INT NOT NULL AUTO_INCREMENT,
+    `password` VARCHAR(45) NOT NULL,
+    PRIMARY KEY (`empId`));

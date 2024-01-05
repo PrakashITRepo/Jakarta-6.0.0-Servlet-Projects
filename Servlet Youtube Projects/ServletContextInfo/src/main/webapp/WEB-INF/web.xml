@@ -1,0 +1,28 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+    <param-name>topicName</param-name>
+    <param-value>Servlet context topic demo</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>first</servlet-name>
+    <servlet-class>com.prakashit.FirstServletContextInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>first</servlet-name>
+    <url-pattern>/getFirstServletContextInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>second</servlet-name>
+    <servlet-class>com.prakashit.SecondServletContextInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>second</servlet-name>
+    <url-pattern>/getSecondServletContextInfo</url-pattern>
+  </servlet-mapping>
+</web-app>

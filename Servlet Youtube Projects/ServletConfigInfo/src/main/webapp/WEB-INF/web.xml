@@ -1,0 +1,29 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>configServlet</servlet-name>
+    <servlet-class>com.prakashit.ServletConfigInfo</servlet-class>
+    <init-param>
+      <param-name>driverName</param-name>
+      <param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+    </init-param>
+
+    <init-param>
+      <param-name>userName</param-name>
+      <param-value>System</param-value>
+    </init-param>
+
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>Oracle</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>configServlet</servlet-name>
+    <url-pattern>/getServletConfigInfo</url-pattern>
+  </servlet-mapping>
+</web-app>
